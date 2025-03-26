@@ -1,6 +1,5 @@
 import subprocess
 import os
-import down_models
 
 def clone_repositories():
     """克隆 fluxgym 和 sd-scripts 仓库"""
@@ -56,7 +55,5 @@ if __name__ == "__main__":
     create_venv()
     #安装依赖
     install_dependencies()
-    #下载模型
-    down_models.main()
     #启动app
     start_app()
